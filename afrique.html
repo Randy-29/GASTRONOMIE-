@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afrique - Gastronomie du Monde</title>
+    <link rel="stylesheet" href="accueil.css">
+    <style>
+        .plats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .plat {
+            background:rgba(255, 255, 255, 0.13);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .plat:hover {
+            transform: scale(1.02);
+        }
+        .plat img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .plat-info {
+            padding: 20px 25px 25px;
+        }
+        .pays {
+            display: inline-block;
+            background: #e67e22;
+            color: white;
+            padding: 4px 14px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .plat-info h3 {
+            font-size: 1.5rem;
+            color: #f4f5f7;
+            margin-bottom: 8px;
+        }
+        .plat-info p {
+            color: #ffffff;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .ingredients {
+            background: rgba(255, 255, 255, 0.13);
+            border-radius: 10px;
+            padding: 12px 15px;
+            margin-top: 10px;
+        }
+        .ingredients strong {
+            color: #e67e22;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .ingredients ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .ingredients li {
+            color:#ffffff;
+            font-size: 0.9rem;
+            padding: 2px 0;
+            padding-left: 18px;
+            position: relative;
+        }
+        .ingredients li::before {
+            content: "•";
+            color: #e67e22;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 30px auto 40px;
+            padding: 0 20px;
+        }
+        .intro p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        @media (max-width: 600px) {
+            .plats {
+                grid-template-columns: 1fr;
+                padding: 15px;
+                gap: 20px;
+            }
+            .plat img {
+                height: 170px;
+            }
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+
+    <header>
+        <h1>🌍 Gastronomie du Monde</h1>
+        <nav>
+            <ul>
+                <li><a href="cuisine.html">Accueil</a></li>
+                <li><a href="afrique.html">Afrique</a></li>
+                <li><a href="europe.html">Europe</a></li>
+                <li><a href="asie.html">Asie</a></li>
+                <li><a href="american.html">Amerique</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/home/loops/Bureau/image /afrique/banner.svg') center/cover;">
+        <h2>🦁 L'Afrique et ses saveurs</h2>
+        <p>Découvrez des recettes authentiques avec images et instructions détaillées.</p>
+    </section>
+
+    <section class="intro">
+        <h2>Recettes authentiques d'Afrique</h2>
+        <p>De l'Ethiopie à l'Afrique du Sud, explorez les saveurs les plus emblématiques du continent.</p>
+    </section>
+
+    <section class="plats">
+
+        <article class="plat">
+            <img src="/home/loops/Bureau/image /afrique/ravitoto.svg" alt="Ravitoto malgache">
+            <div class="plat-info">
+                <span class="pays">🇲🇬 Madagascar</span>
+                <h3>Ravitoto</h3>
+                <p>Plat traditionnel malgache à base de feuilles de manioc pilées, souvent accompagné de viande de porc et servi avec du riz blanc.</p>
+                <div class="ingredients">
+                    <strong>🥘 Ingrédients principaux</strong>
+                    <ul>
+                        <li>Feuilles de manioc (ravitoto)</li>
+                        <li>Viande de porc</li>
+                        <li>Lait de coco</li>
+                        <li>Servi avec du riz blanc</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="plat">
+            <img src="/home/loops/Bureau/image /afrique/thieboudienne.svg" alt="Thieboudienne sénégalaise">
+            <div class="plat-info">
+                <span class="pays">🇸🇳 Sénégal</span>
+                <h3>Thieboudienne</h3>
+                <p>Le plat national du Sénégal ! Du poisson braisé sur un lit de riz rouge, accompagné de légumes (chou, carottes, aubergines).</p>
+                <div class="ingredients">
+                    <strong>🥘 Ingrédients principaux</strong>
+                    <ul>
+                        <li>Thiof (poisson blanc)</li>
+                        <li>Riz parfumé & tomates</li>
+                        <li>Légumes variés</li>
+                        <li>Nététou (épice typique)</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="plat">
+            <img src="/home/loops/Bureau/image /afrique/couscous.svg" alt="Couscous marocain">
+            <div class="plat-info">
+                <span class="pays">🇲🇦 Maroc</span>
+                <h3>Couscous Royal</h3>
+                <p>Le plat incontournable du Maghreb. Semoule de blé fine accompagnée de viande d'agneau, de poulet et de légumes de saison.</p>
+                <div class="ingredients">
+                    <strong>🥘 Ingrédients principaux</strong>
+                    <ul>
+                        <li>Semoule de couscous</li>
+                        <li>Agneau & poulet</li>
+                        <li>Carottes, navets, courgettes</li>
+                        <li>Ras el hanout (épices)</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="plat">
+            <img src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Doro Wat éthiopien">
+            <div class="plat-info">
+                <span class="pays">🇪🇹 Éthiopie</span>
+                <h3>Doro Wat</h3>
+                <p>Ragoût de poulet très épicé servi lors des cérémonies. On le mange avec de l'injera, une crêpe épaisse et légèrement acide.</p>
+                <div class="ingredients">
+                    <strong>🥘 Ingrédients principaux</strong>
+                    <ul>
+                        <li>Poulet entier découpé</li>
+                        <li>Berbéré (mélange d'épices)</li>
+                        <li>Oignons, beurre clarifié</li>
+                        <li>Œufs durs & injera</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="plat">
+            <img src="/home/loops/Bureau/image /afrique/jollof.svg" alt="Jollof Rice nigérian">
+            <div class="plat-info">
+                <span class="pays">🇳🇬 Nigéria</span>
+                <h3>Jollof Rice</h3>
+                <p>Le riz le plus célèbre d'Afrique de l'Ouest ! Cuit dans une sauce tomate épicée, il est souvent accompagné de poulet grillé.</p>
+                <div class="ingredients">
+                    <strong>🥘 Ingrédients principaux</strong>
+                    <ul>
+                        <li>Riz long grain</li>
+                        <li>Tomates & poivrons</li>
+                        <li>Thym, curry, piment</li>
+                        <li>Poulet grillé</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="plat">
+            <img src="/home/loops/Bureau/image /afrique/bobotie.svg" alt="Bobotie sud-africain">
+            <div class="plat-info">
+                <span class="pays">🇿🇦 Afrique du Sud</span>
+                <h3>Bobotie</h3>
+                <p>Plat sucré-salé à base de viande hachée épicée, recouvert d'une crème aux œufs et doré au four. Le plat national sud-africain !</p>
+                <div class="ingredients">
+                    <strong>🥘 Ingrédients principaux</strong>
+                    <ul>
+                        <li>Viande hachée (bœuf)</li>
+                        <li>Curry, curcuma, chutney</li>
+                        <li>Œufs & lait (crème dessus)</li>
+                        <li>Feuilles de laurier</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+    <section style="text-align: center; padding: 40px 20px;">
+        <a href="cuisine.html" class="btn">🏠 Retour à l'accueil</a>
+        <a href="europe.html" class="btn" style="margin-left: 10px;">➡️ Europe</a>
+        <a href="asie.html" class="btn" style="margin-left: 10px;">➡️ Asie</a>
+        <a href="american.html" class="btn" style="margin-left: 10px;">➡️ Amerique</a>
+    </section>
+
+    <footer>
+        <p> 2026 -Gastronomie du Monde</p>
+    </footer>
+
+    <
+</body>
+</html>
